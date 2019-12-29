@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import * as types from 'vuse';
+import { types } from 'vuse';
 
 export default {
   name: 'Newsletter',
