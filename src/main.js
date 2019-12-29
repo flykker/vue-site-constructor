@@ -11,6 +11,10 @@ import i18n from "./lang/lang"
 
 Vue.config.productionTip = false
 
+// import Builder from 'vuse'
+
+// Vue.use(Builder);
+
 new Vue({
   router,
   store,

@@ -6,50 +6,57 @@ const Menu = [
     icon: "dashboard",
     name: "Dashboard"
   },
+  // {
+  //   title: "Chat",
+  //   group: "apps",
+  //   icon: "chat_bubble",
+  //   target: "_blank",
+  //   name: "Chat"
+  // },
   {
-    title: "Chat",
+    title: "My sites",
     group: "apps",
     icon: "chat_bubble",
-    target: "_blank",
-    name: "Chat"
+    name: "mysites",
+    //href: "/#/mysites"
   },
-  {
-    title: "Inbox",
-    group: "apps",
-    name: "Mail",
-    target: "_blank",
-    icon: "email"
-  },
+  // {
+  //   title: "Inbox",
+  //   group: "apps",
+  //   name: "Mail",
+  //   target: "_blank",
+  //   icon: "email"
+  // },
   // {
   //   title: 'Media',
   //   group: 'apps',
   //   name: 'Media',
   //   icon: 'perm_media',
   // },
-  {
-    title: "Widgets",
-    group: "widgets",
-    component: "widgets",
-    icon: "widgets",
-    items: [
-      { name: "social", title: "Social", component: "SocialWidget" },
-      {
-        name: "statistic",
-        title: "Statistic",
-        badge: "new",
-        component: "StatisticWidget"
-      },
-      { name: "chart", title: "Chart", component: "ChartWidget" },
-      { name: "list", title: "List", component: "ListWidget" }
-    ]
-  },
-  { header: "CMS" },
-  {
-    title: "List & Query",
-    group: "layout",
-    icon: "view_compact",
-    items: [{ name: "Table", title: "Basic Table", component: "ListTable" }]
-  }
+  // {
+  //   title: "Widgets",
+  //   group: "widgets",
+  //   component: "widgets",
+  //   icon: "widgets",
+  //   items: [
+  //     { name: "social", title: "Social", component: "SocialWidget" },
+  //     {
+  //       name: "statistic",
+  //       title: "Statistic",
+  //       badge: "new",
+  //       component: "StatisticWidget"
+  //     },
+  //     { name: "chart", title: "Chart", component: "ChartWidget" },
+  //     { name: "list", title: "List", component: "ListWidget" }
+  //   ]
+  // },
+  // { header: "CMS" },
+  // {
+  //   title: "List & Query",
+  //   group: "layout",
+  //   icon: "view_compact",
+  //   items: [{ name: "Table", title: "Basic Table", component: "ListTable" }]
+  // }
   // {
   //   title: 'Forms & Controls',
   //   group: 'forms',

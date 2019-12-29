@@ -1,4 +1,4 @@
-import { AuthLayout, DefaultLayout, ChatLayout } from "@/components/layouts"
+import { AuthLayout, DefaultLayout, ChatLayout, NavbarLayout } from "@/components/layouts"
 
 export const publicRoute = [
   { path: "*", component: () => import(/* webpackChunkName: "errors-404" */ "@/views/error/NotFound.vue") },
@@ -52,7 +52,33 @@ export const protectedRoute = [
         name: "Forbidden",
         meta: { title: "Access Denied", hiddenInMenu: true },
         component: () => import(/* webpackChunkName: "error-403" */ "@/views/error/Deny.vue")
-      }
+      },
+      //mysites
+      {
+        path: "/mysites",
+        name: "mysites",
+        component: DefaultLayout,
+        meta: { title: "My sites", icon: "widgets", group: "apps" },
+        component: () => import(/* webpackChunkName: "social-widget" */ "@/views/Mysites.vue")
+      },
+
+      
+    ]
+  },
+
+  //mysites
+  {
+    path: "/sites",
+    component: NavbarLayout,
+    meta: { title: "My sites Edit", icon: "widgets", group: "apps" },
+    redirect: "/sites/edit",
+    children: [
+      {
+        path: "/sites/edit",
+        name: "sites-edit",
+        meta: { title: "My sites Edit", icon: "widgets", group: "apps" },
+        component: () => import(/* webpackChunkName: "social-widget" */ "@/views/mysites/MysitesEdit.vue")
+      },
     ]
   },
 

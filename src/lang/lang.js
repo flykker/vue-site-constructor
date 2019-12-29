@@ -3,7 +3,7 @@ import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 
 //默认中文
-const DEFAULT_LANG = 'zh'
+const DEFAULT_LANG = 'en'
 
 const locales = {
   zh: require('./i18n/zh.json'),

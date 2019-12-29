@@ -6,13 +6,13 @@
     <v-text-field flat solo-inverted prepend-inner-icon="search" :label="$t('toobar.search')" clearable class="search"></v-text-field>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat href="mailto:wangqiangshen@gmail.com">Hire Me</v-btn>
+      <!-- <v-btn flat href="mailto:wangqiangshen@gmail.com">Hire Me</v-btn>
       <v-btn icon href="https://github.com/tookit/vue-material-admin">
         <v-icon class="fa-2x">fa-github</v-icon>
       </v-btn>
       <v-btn icon @click="handleFullScreen()">
         <v-icon>fullscreen</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-menu offset-y origin="center center" class="elelvation-1" :nudge-bottom="14" transition="scale-transition">
         <v-btn icon flat slot="activator">
           <v-badge color="red" overlap>
@@ -75,12 +75,12 @@ export default {
           title: this.$t('toobar.settings'),
           click: this.handleSetting
         },
-        {
-          icon: "fullscreen_exit",
-          href: "#",
-          title: this.$t('toobar.logout'),
-          click: this.handleLogut
-        }
+        // {
+        //   icon: "fullscreen_exit",
+        //   href: "#",
+        //   title: this.$t('toobar.logout'),
+        //   click: this.handleLogut
+        // }
       ]
     }
   },
